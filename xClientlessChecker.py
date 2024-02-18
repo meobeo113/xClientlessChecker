@@ -29,4 +29,5 @@ def IsClientless():
         return False
     return True
 
-log('[%s] Loaded' % __name__)
+# Plugin loaded success
+log("Plugin: "+pName+" v"+pVersion+" successfully loaded")
