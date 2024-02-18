@@ -2,8 +2,8 @@ from phBot import *
 import QtBind
 
 pName = 'xClientlessChecker'
-pVersion = '1.0.0'
-pUrl = 'https://raw.githubusercontent.com/meobeo113/xClientlessChecker/main/xClientlessChecker.py'
+pVersion = '1.0.1'
+pUrl = 'https://raw.githubusercontent.com/meobeo113/xClientlessChecker/master/xClientlessChecker.py'
 
 gui = QtBind.init(__name__, 'xClientlessChecker')
 
@@ -23,11 +23,11 @@ def checkbox_clicked(checked):
     log('Check Box: %s' % checked)
 
 # Check Clientless
-def IsClientless():
-    pid = get_client()['pid']
-    if pid:
-        return False
-    return True
+#def IsClientless():
+#    pid = get_client()['pid']
+#    if pid:
+#        return False
+#    return True
 
 # Plugin loaded success
 log("Plugin: "+pName+" v"+pVersion+" successfully loaded")
